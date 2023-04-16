@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:wght@300;400;500;600;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: 'Bebas Neue', cursive;
+} */
+:root {
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+  --clr-gray: #6a6a6a;
+  --clr-champagne: #F7EDE8;
+  --clr-orange: #CD4631;
+  --clr-blue: #81ADC8;
+  --clr-light-blue: #EDF3F7;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+a, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.btn-outline {
+  border: 2.5px solid var(--clr-black);
+  color: var(--clr-black);
+  background-color: var(--clr-champagne);
+}
+.btn-dark {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+.btn-shadow {
+  box-shadow: 4px 4px #4d4d4d75;
+}
+.btn-lg {
+  padding: 20px 40px;
+}
+
+.container {
+  max-width: 1250px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.btn-outline:hover {
+  background-color: var(--clr-orange);
+}
+.text-orange {
+  color: var(--clr-orange);
+}
