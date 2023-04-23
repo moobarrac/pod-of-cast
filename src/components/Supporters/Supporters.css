@@ -1,0 +1,20 @@
+.supporters {
+  background-color: var(--clr-champagne);
+  padding: 80px 0;
+}
+.supporter-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+
+  gap: 50px;
+  flex-wrap: wrap;
+  border-top: 2px solid var(--clr-black);
+  border-bottom: 2px solid var(--clr-black);
+}
+@media screen and (max-width: 900px) {
+  .supporter-content img {
+    width: 100px;
+  }
+}
