@@ -1,0 +1,134 @@
+.sponsor {
+  position: relative;
+  padding: 150px 20px;
+}
+.sponsor-content {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sponsor-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.sponsor-title h3 {
+  font-size: 3rem;
+}
+.sponsor-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+.sponsor-icon img {
+  width: 100%;
+  height: 100%;
+}
+.sponsor-types {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.star-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 120px;
+  height: 120px;
+
+}
+.star-icon img {
+  width: 100%;
+  height: 100%;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.plan-top, .plan-bottom {
+  border: 2px solid var(--clr-black);
+  padding: 30px;
+  border-radius: 10px;
+}
+.plan-orange {
+  border: 2px solid var(--clr-orange);
+  background-color: var(--clr-champagne);
+}
+.plan-top h4 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+.plan-top p {
+  font-size: 12px;
+}
+.plan-top .extra {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extra .pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.extra .pricing .price {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--clr-orange);
+}
+.extra .pricing .freq {
+  font-weight: 600;
+}
+.plan-bottom p {
+  font-weight: 600;
+  font-size: 12px;
+}
+.plan-bottom ul {
+  margin: 20px;
+  list-style: circle;
+}
+.plan-bottom ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .sponsor {
+    padding: 80px 20px;
+  }
+  .sponsor-title h3 {
+    font-size: 2rem;
+  }
+  .sponsor-types {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .sponsor-title h3 {
+    font-size: 1.2rem;
+  }
+  .sponsor-content p {
+    font-size: 12px;
+  }
+  .sponsor-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .sponsor-types {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+}
